@@ -1,7 +1,4 @@
-
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-
-var SMTH = hasSymbol ? Symbol.for('smth') : '@@smth';
+var SMTH = Symbol.for('smth')
 
 // this version causes the "polyfill bloat" to be added to both cjs & esm outputs
 //
